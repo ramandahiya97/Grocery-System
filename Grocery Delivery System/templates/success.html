@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body
+   {
+    background-image:url('https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603_1280.jpg');
+     background-size:cover;
+     }
+
+
+</style>
+<body>
+<h2>Order Placed Successfully</h2>
+<h3>Total: {{ '₹{:,.2f}'.format(total) }}</h3>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <hr/>
+                <p>&#169; <a href="/index">Raashan.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

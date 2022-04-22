@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>homepage</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 30px;
+  text-align: left;
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/14/08/10/wood-2142241__480.jpg');
+  color: black;
+}
+.header h1 {
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Raashan.com</h1>
+</div>
+
+<div class="navbar">
+    <a href="/about">About Us</a>
+    <div class="subnav">
+        <button class="subnavbtn">Profile<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="/account">Your Account</a>
+            <a href="/address">Your Address</a>
+            <a href="/orders">Your Orders</a>
+        </div>
+    </div>
+
+    <div class="subnav">
+        <button class="subnavbtn">Categories <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="/sabzi">Fruits & Vegetables</a>
+            <a href="/dairy">Dairy & Bakery</a>
+            <a href="/staples">Staples</a>
+            <a href="/beverages">Beverages</a>
+        </div>
+    </div>
+    <a href="/cart">Cart</a>
+    <a href="/support">Support</a>
+</div>
+
+<div style="padding:0 16px">
+</div>
+<div class="main">
+    <img class="firstpic"
+         src="https://media.istockphoto.com/photos/grocery-shopping-at-upermarket-mall-grocery-store-vegetable-healthy-picture-id874418372?k=20&m=874418372&s=612x612&w=0&h=TvB70lRb0LupNuHQ4kYFr9ASXPB81q7iyuUVpynT4SM="
+         style="width:100%">
+</div>
+</body>
+</html>

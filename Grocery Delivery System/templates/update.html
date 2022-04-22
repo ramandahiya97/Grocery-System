@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Details</title>
+    <style>
+        h2{
+            color: brown;
+            font-family:bold;
+            font-size:50px;
+            text-align: center;
+        }
+        body{
+            padding:20px;
+            margin:50px;
+            background-color:pink;
+            text-align: center;
+            font-size:30px;
+        }
+        a{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Update Product Details</h2>
+<form action="/updateProDetails" method="POST">
+    <tr>
+        <td>Enter Product Id : <input type="number" name="pid"></td>
+    </tr>
+    <br>
+    <tr>
+        <td>Enter New Name : <input type="text" name="pname"></td>
+    </tr>
+    <br>
+    <tr>
+        <td>Enter New Price : <input type="text" name="pprice"></td>
+    </tr>
+    <br>
+    <tr>
+        <td>Enter New Category : <input type="text" name="category"></td>
+    </tr>
+    <br>
+    <tr>
+        <td><input type="submit" value="Submit"></td>
+    </tr>
+    <br>
+    </table>
+</form>
+
+</body>
+</html>

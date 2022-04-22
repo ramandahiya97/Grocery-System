@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.1 on win32)" generated="20220422 21:07:08.218" rpa="false" schemaversion="3">
+    <suite id="s1" name="Project" source="C:\Users\Lenovo\MajorPro\MajorPro\Test\project.robot">
+        <test id="s1-t1" name="Test Case 9" line="7">
+            <kw name="Open Browser" library="SeleniumLibrary">
+                <arg>http://127.0.0.1:1000/</arg>
+                <arg>chrome</arg>
+                <doc>Opens a new browser instance to the optional ``url``.</doc>
+                <msg timestamp="20220422 21:07:09.795" level="INFO">Opening browser 'chrome' to base url
+                    'http://127.0.0.1:1000/'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:09.794" endtime="20220422 21:07:15.976"/>
+            </kw>
+            <kw name="Maximize Browser Window" library="SeleniumLibrary">
+                <doc>Maximizes current browser window.</doc>
+                <status status="PASS" starttime="20220422 21:07:15.977" endtime="20220422 21:07:16.094"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//a[normalize-space()='Forgot password?']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:07:16.095" level="INFO">Sending key(s) ('[return]',) to
+                    //a[normalize-space()='Forgot password?'] element.
+                </msg>
+                <msg timestamp="20220422 21:07:20.503" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:07:16.095" endtime="20220422 21:07:20.513"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@placeholder='Enter your username']</arg>
+                <arg>raman</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:20.514" level="INFO">Typing text 'raman' into text field
+                    '//input[@placeholder='Enter your username']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:20.514" endtime="20220422 21:07:20.601"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@placeholder='Enter your email']</arg>
+                <arg>raman@gmail.com</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:20.602" level="INFO">Typing text 'raman@gmail.com' into text field
+                    '//input[@placeholder='Enter your email']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:20.602" endtime="20220422 21:07:20.694"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@placeholder='Enter phone number']</arg>
+                <arg>123456789</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:20.695" level="INFO">Typing text '123456789' into text field
+                    '//input[@placeholder='Enter phone number']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:20.695" endtime="20220422 21:07:20.774"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//input[@value='Submit']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:07:20.775" level="INFO">Sending key(s) ('[return]',) to
+                    //input[@value='Submit'] element.
+                </msg>
+                <msg timestamp="20220422 21:07:23.001" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:07:20.775" endtime="20220422 21:07:23.015"/>
+            </kw>
+            <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+                <arg>05</arg>
+                <doc>Sets the implicit wait value used by Selenium.</doc>
+                <status status="PASS" starttime="20220422 21:07:23.016" endtime="20220422 21:07:23.017"/>
+            </kw>
+            <kw name="Close Browser" library="SeleniumLibrary">
+                <doc>Closes the current browser.</doc>
+                <status status="PASS" starttime="20220422 21:07:23.018" endtime="20220422 21:07:25.146"/>
+            </kw>
+            <status status="PASS" starttime="20220422 21:07:09.793" endtime="20220422 21:07:25.148"/>
+        </test>
+        <test id="s1-t2" name="Test Case 10" line="19">
+            <kw name="Open Browser" library="SeleniumLibrary">
+                <arg>http://127.0.0.1:1000/</arg>
+                <arg>chrome</arg>
+                <doc>Opens a new browser instance to the optional ``url``.</doc>
+                <msg timestamp="20220422 21:07:25.154" level="INFO">Opening browser 'chrome' to base url
+                    'http://127.0.0.1:1000/'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:25.154" endtime="20220422 21:07:29.541"/>
+            </kw>
+            <kw name="Maximize Browser Window" library="SeleniumLibrary">
+                <doc>Maximizes current browser window.</doc>
+                <status status="PASS" starttime="20220422 21:07:29.542" endtime="20220422 21:07:29.661"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@placeholder='Enter your username']</arg>
+                <arg>raman@gmail.com</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:29.661" level="INFO">Typing text 'raman@gmail.com' into text field
+                    '//input[@placeholder='Enter your username']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:29.661" endtime="20220422 21:07:29.750"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@name='pwd']</arg>
+                <arg>1234</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:29.751" level="INFO">Typing text '1234' into text field
+                    '//input[@name='pwd']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:29.750" endtime="20220422 21:07:29.825"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//form[@action='/verify']//input[@value='Submit']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:07:29.826" level="INFO">Sending key(s) ('[return]',) to
+                    //form[@action='/verify']//input[@value='Submit'] element.
+                </msg>
+                <msg timestamp="20220422 21:07:36.440" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:07:29.825" endtime="20220422 21:07:36.453"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//a[normalize-space()='Product']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:07:36.453" level="INFO">Sending key(s) ('[return]',) to
+                    //a[normalize-space()='Product'] element.
+                </msg>
+                <msg timestamp="20220422 21:07:43.582" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:07:36.453" endtime="20220422 21:07:43.602"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//a[normalize-space()='Order History']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:07:43.603" level="INFO">Sending key(s) ('[return]',) to
+                    //a[normalize-space()='Order History'] element.
+                </msg>
+                <msg timestamp="20220422 21:07:48.281" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:07:43.603" endtime="20220422 21:07:48.291"/>
+            </kw>
+            <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+                <arg>05</arg>
+                <doc>Sets the implicit wait value used by Selenium.</doc>
+                <status status="PASS" starttime="20220422 21:07:48.292" endtime="20220422 21:07:48.293"/>
+            </kw>
+            <kw name="Close Browser" library="SeleniumLibrary">
+                <doc>Closes the current browser.</doc>
+                <status status="PASS" starttime="20220422 21:07:48.293" endtime="20220422 21:07:50.414"/>
+            </kw>
+            <status status="PASS" starttime="20220422 21:07:25.152" endtime="20220422 21:07:50.415"/>
+        </test>
+        <test id="s1-t3" name="Test Case 11" line="31">
+            <kw name="Open Browser" library="SeleniumLibrary">
+                <arg>http://127.0.0.1:1000/</arg>
+                <arg>chrome</arg>
+                <doc>Opens a new browser instance to the optional ``url``.</doc>
+                <msg timestamp="20220422 21:07:50.419" level="INFO">Opening browser 'chrome' to base url
+                    'http://127.0.0.1:1000/'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:50.419" endtime="20220422 21:07:56.146"/>
+            </kw>
+            <kw name="Maximize Browser Window" library="SeleniumLibrary">
+                <doc>Maximizes current browser window.</doc>
+                <status status="PASS" starttime="20220422 21:07:56.147" endtime="20220422 21:07:56.266"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@placeholder='Enter your username']</arg>
+                <arg>raman@gmail.com</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:56.267" level="INFO">Typing text 'raman@gmail.com' into text field
+                    '//input[@placeholder='Enter your username']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:56.266" endtime="20220422 21:07:56.365"/>
+            </kw>
+            <kw name="Input Text" library="SeleniumLibrary">
+                <arg>//input[@name='pwd']</arg>
+                <arg>1234</arg>
+                <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                <msg timestamp="20220422 21:07:56.366" level="INFO">Typing text '1234' into text field
+                    '//input[@name='pwd']'.
+                </msg>
+                <status status="PASS" starttime="20220422 21:07:56.366" endtime="20220422 21:07:56.444"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//form[@action='/verify']//input[@value='Submit']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:07:56.444" level="INFO">Sending key(s) ('[return]',) to
+                    //form[@action='/verify']//input[@value='Submit'] element.
+                </msg>
+                <msg timestamp="20220422 21:08:00.982" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:07:56.444" endtime="20220422 21:08:00.993"/>
+            </kw>
+            <kw name="Press Keys" library="SeleniumLibrary">
+                <arg>//a[normalize-space()='LOGOUT']</arg>
+                <arg>[return]</arg>
+                <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+                <msg timestamp="20220422 21:08:00.994" level="INFO">Sending key(s) ('[return]',) to
+                    //a[normalize-space()='LOGOUT'] element.
+                </msg>
+                <msg timestamp="20220422 21:08:01.717" level="INFO">Sending keys [return]</msg>
+                <status status="PASS" starttime="20220422 21:08:00.993" endtime="20220422 21:08:01.754"/>
+            </kw>
+            <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+                <arg>05</arg>
+                <doc>Sets the implicit wait value used by Selenium.</doc>
+                <status status="PASS" starttime="20220422 21:08:01.755" endtime="20220422 21:08:01.757"/>
+            </kw>
+            <kw name="Close Browser" library="SeleniumLibrary">
+                <doc>Closes the current browser.</doc>
+                <status status="PASS" starttime="20220422 21:08:01.758" endtime="20220422 21:08:04.021"/>
+            </kw>
+            <status status="PASS" starttime="20220422 21:07:50.418" endtime="20220422 21:08:04.022"/>
+        </test>
+        <status status="PASS" starttime="20220422 21:07:08.220" endtime="20220422 21:08:04.025"/>
+    </suite>
+    <statistics>
+        <total>
+            <stat pass="3" fail="0" skip="0">All Tests</stat>
+        </total>
+        <tag>
+        </tag>
+        <suite>
+            <stat pass="3" fail="0" skip="0" id="s1" name="Project">Project</stat>
+        </suite>
+    </statistics>
+    <errors>
+    </errors>
+</robot>

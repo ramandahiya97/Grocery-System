@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+* {box-sizing: border-box;}
+
+.header {
+  height: 100%;
+  padding: 40px;
+  text-align: left;
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/14/08/10/wood-2142241__480.jpg');
+  color: rgb(1, 255, 64);
+}
+.header h1 {
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2019/06/02/15/44/call-centre-4246681__480.jpg");
+  background-size: cover;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+mark {
+  background-color: #45a049;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  right: 50;
+  margin: 20px;
+  max-width: 400px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="/home"><h1>Raashan.com</h1></a>
+</div>
+
+<div style="padding:0 16px">
+</div>
+<br><br>
+
+<h3>
+    <mark>Contact Us</mark>
+</h3>
+<h3>
+    <mark>Please Enter Your Details</mark>
+</h3>
+<div class="container">
+    <form action="/complaint" method="post">
+        <label for="id">Order ID</label>
+        <input type="number" id="id" name="id" placeholder="Your Order id.."><br><br>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <label for="prodName">Product Name</label>
+        <input type="text" id="pname" name="pname" placeholder="Product name..">
+        <br><br>
+        <label for="date">Order Date</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+        <label for="subject">SUBJECT</label>
+        <textarea id="subject" name="subject" placeholder="Enter your querry.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

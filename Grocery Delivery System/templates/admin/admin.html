@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Admin View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+    .header {
+    padding: 30px;
+    text-align: left;
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/14/08/10/wood-2142241__480.jpg');
+    color: black;
+    }
+    .header h1 {
+    font-size: 40px;
+    }
+
+    .wrapper {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .form-signin {
+        max-width: 420px;
+        padding: 0px 38px 30px;
+        margin: 0 auto;
+        background-color: #eee;
+        border: 3px solid rgba(0,0,0,0.1);
+    }
+    body{
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/28/11/50/wood-3357122__340.jpg');
+        background-size: cover;
+    }
+
+    .form-signin-heading {
+        text-align:center;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+    }
+
+    hr.style1{
+        border-top: 1px solid #ffffff;
+    }
+    .colorgraph {
+        height: 5px;
+        border-top: 0;
+        background: #c4e17f;
+        border-radius: 5px;
+        background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <a href="/admin"><h1>Raashan.com [Admin Module]</h1></a>
+</div>
+<div class="container">
+    <div class="wrapper">
+        <form method="POST" class="form-signin">
+            <h2 class="container">Welcome, Administrator!</h2>
+            <hr class="colorgraph">
+            <a href="/InsertProduct" class="btn btn-primary btn-lg btn-block" role="button" name="insert_product"
+               value="Insert Product">Insert Product</a>
+            <a href="/ShowAllProducts" class="btn btn-primary btn-lg btn-block" role="button" name="show_all_products"
+               value="Show All Products">Show All Products</a>
+            <a href="/Showusers" class="btn btn-primary btn-lg btn-block" role="button" name="show_all_users"
+               value="Show All Users">Show All Users</a>
+            <a href="/showcomplaints" class="btn btn-primary btn-lg btn-block" role="button" name="show_complaints"
+               value="Show All complaints">Show Complaints</a>
+            <a href="/updateproducts" class="btn btn-primary btn-lg btn-block" role="button" name="update_products"
+               value="update products">Update Products</a>
+            <a href="/deleteproducts" class="btn btn-primary btn-lg btn-block" role="button" name="delete_products"
+               value="delete products">Delete Products</a>
+            <br>
+            <div class="row text-center">
+                <p class="text-center" style="font-size: 16px"><a href="/">Log Out</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

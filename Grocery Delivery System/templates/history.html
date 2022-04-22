@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}
+Raashan.com
+{% endblock %}
+
+{% block body %}
+<!-- Main Store Body -->
+<div class="row">
+    <div class="col-sm">
+        <h2>Your Shopping History</h2>
+        <p>Items you've bought in the past.</p>
+        <table class="table table-sm">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Date</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <style>
+              body{
+              background-image:url('https://cdn.pixabay.com/photo/2017/08/25/13/51/cloud-2680242__340.jpg');
+              font-size:20px;
+              }
+
+            </style>
+            <tbody>
+            <!-- For Each shirt -->
+            {% for i in range(myProuctsLen) %}
+            <tr>
+                <th scope="row">{{ i + 1 }}</th>
+                <td><img src="/static/img/{{ myProucts[i][" image"] }}" width="30px" alt="{{ myProucts[i]["name"] }}" />
+                </td>
+                <td>{{ myProucts[i]["name"] }}</td>
+                <td>{{ myProucts[i]["quantity"] }}</td>
+                <td>{{ myProucts[i]["date"] }}</td>
+                <!--                <td><a href="/filter/?id={{ myProucts[i]["id"] }}"><button type="button" class="btn btn-warning">Buy Again</button></a></td>-->
+            </tr>
+            </tbody>
+            {% endfor %}
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
+</div>
+</div>
+</main>
+
+{% endblock %}
